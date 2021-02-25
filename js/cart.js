@@ -9,7 +9,7 @@ var cart;
 function loadCart() {
   var cartItems = JSON.parse(localStorage.getItem('cart'));
   cart = new Cart(cartItems);
-  document.getElementById('cart').textContent = cartItems;
+  document.getElementById('cart').textContent = `${cartItems}: Quantity ${cartItems} `//number?;
   console.log(cartItems);
   //Cart.product???
   // this displays the objects in the cart total, but not the item names....^^^
@@ -24,6 +24,7 @@ function renderCart() {
 
 // TODO: Remove all of the rows (tr) in the cart table (tbody)
 function clearCart() {
+  // let deleteCart =
   // need to delete TR's? 
   // cart.splice(0, cart.length); MAYBE?
 }
