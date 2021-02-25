@@ -11,6 +11,8 @@ function loadCart() {
   cart = new Cart(cartItems);
   document.getElementById('cart').textContent = cartItems;
   console.log(cartItems);
+  //Cart.product???
+  // this displays the objects in the cart total, but not the item names....^^^
 }
 
 // Make magic happen --- re-pull the Cart, clear out the screen and re-draw it
